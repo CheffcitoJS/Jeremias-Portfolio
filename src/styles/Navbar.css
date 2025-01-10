@@ -1,0 +1,71 @@
+/* src/styles/NavBar.css */
+.navbar {
+    padding: 18px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    transition: 0.32s ease-in-out;
+    background-color: #1e1e30;
+  }
+  
+  .navbar.scrolled {
+    padding: 0px 0;
+    background-color: #121212;
+  }
+  
+  .navbar-brand {
+    width: 9%;
+  }
+  
+  .navbar-nav .nav-link {
+    font-weight: normal;
+    color: #fff !important;
+    letter-spacing: 0.8px;
+    padding: 0 25px;
+    font-size: 18px;
+    opacity: 0.75;
+  }
+  
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link.active {
+    opacity: 1;
+  }
+  
+  .navbar-text {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-icon a {
+    width: 42px;
+    height: 42px;
+    background: rgba(217, 217, 217, 0.1);
+    display: inline-flex;
+    border-radius: 50%;
+    margin-right: 6px;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  
+  .social-icon a:hover {
+    background: #8A2BE2;
+  }
+  
+  .navbar-text button {
+    font-weight: bold;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 18px 34px;
+    font-size: 18px;
+    margin-left: 18px;
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .navbar-text button:hover {
+    color: #121212;
+    background-color: #fff;
+  }
