@@ -1,0 +1,9 @@
+.no-style-link {
+    color: inherit; /* Usa el color del texto circundante */
+    text-decoration: none; /* Elimina el subrayado */
+  }
+  
+  .no-style-link:hover {
+    text-decoration: underline; /* Opcional: Subraya el enlace al pasar el mouse */
+  }
+  

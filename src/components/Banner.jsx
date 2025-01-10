@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+  const toRotate = [ "Analista de Mercado", "Polímata" ];
   const period = 2000;
 
   useEffect(() => {
@@ -55,13 +55,13 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Judy`} <span className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'>
+                <span className="tagline">Bienvenido a mi Portfolio</span>
+                <h1>{`Soy Jeremias Acosta,`} <span className="txt-rotate" dataperiod="1000" data-rotate='[ "Analista de Mercado", "Polímata" ]'>
   <span className="wrap">{text}</span>
 </span>
 </h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                  <p>Soy Jeremías Acosta, estratega de marketing digital especializado en branding y análisis de mercado. Ayudo a empresas a destacar en un mercado competitivo mediante estrategias creativas y personalizadas que conectan con su público ideal. Mi experiencia incluye auditorías de identidad visual, posicionamiento estratégico y desarrollo de contenido de alto impacto, siempre enfocado en maximizar la visibilidad, el engagement y el crecimiento de mis clientes.</p>
+                  <button onClick={() => console.log('connect')}>Contactame <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
           </Col>
